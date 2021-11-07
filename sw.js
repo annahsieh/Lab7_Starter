@@ -9,11 +9,12 @@ self.addEventListener('install', function (event) {
    * TODO - Part 2 Step 2
    * Create a function as outlined above
    */
-  let urlsToCache = ['assets/scripts/main.js', 
-                     'assets/scripts/Router.js', 
-                     'assets/components/RecipeCard.js',
-                     'assets/components/RecipeExpand.js',
-                     'assets/styles/main.css'];
+  let urlsToCache = ['https://introweb.tech/assets/json/ghostCookies.json',
+  'https://introweb.tech/assets/json/birthdayCake.json',
+  'https://introweb.tech/assets/json/chocolateChip.json',
+  'https://introweb.tech/assets/json/stuffing.json',
+  'https://introweb.tech/assets/json/turkey.json',
+  'https://introweb.tech/assets/json/pumpkinPie.json'];
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
